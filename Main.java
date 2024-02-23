@@ -33,6 +33,11 @@ public class Main {
                 case 2:
                     System.out.print("Valor do saque: ");
                     double saque = scanner.nextDouble();
+                    if (saque > saldo) {
+                        System.out.println("Saldo insuficiente!");
+                        System.out.println("**************************");
+                        break;
+                    }
                     saldo -= saque;
                     System.out.println("**************************");
                     break;
